@@ -1,0 +1,7 @@
+[2026-04-24T18:41:47Z] === AST ITERATION 1 START | repo=apache/airflow sha=0eb78627 ===
+[2026-04-24T18:41:47Z] [iter=1] PHASE START: ast repo=apache/airflow sha=0eb78627
+[2026-04-24T18:41:47Z] [iter=1] Building AST aggregate chunks
+[2026-04-24T18:46:58Z] [iter=1] AST chunks built count=1 triples=3421383
+[2026-04-24T18:46:58Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/0eb7862730c68d25ebbabf1988d66d50dd988bb0/.complete
+[2026-04-24T18:46:58Z] [iter=1] PHASE END: ast elapsed_s=311 elapsed_min=5.2
+[2026-04-24T18:46:58Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
