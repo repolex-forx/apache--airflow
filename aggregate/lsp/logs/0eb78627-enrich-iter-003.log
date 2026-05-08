@@ -1,0 +1,35 @@
+[2026-05-08T02:45:23Z] === ENRICH ITERATION 3 START | repo=apache/airflow sha=0eb78627 ===
+[2026-05-08T02:45:23Z] [iter=3] PHASE START: enrich repo=apache/airflow sha=0eb78627 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0eb78627-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0eb7862730c68d25ebbabf1988d66d50dd988bb0.nq.gz
+[2026-05-08T02:45:23Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-05-08T02:46:53Z] [iter=3] AST store loaded triples=3421352 load_secs=89 mem_mb=902 MB
+[2026-05-08T02:46:53Z] [iter=3] Step 2: Finding LSP targets mem_mb=902 MB
+[2026-05-08T02:46:58Z] [iter=3] LSP targets found call_sites=26625 imports=1978 extends=325 implements=0 secs=5
+[2026-05-08T02:47:02Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=902 MB
+[2026-05-08T02:47:17Z] [iter=3] Position index built positions=240004 nodes_with_types=293364 secs=15 mem_mb=902 MB
+[2026-05-08T02:47:17Z] [iter=3] Step 3: Starting LSP resolution mem_mb=902 MB already_completed_types=[] already_completed_files=0
+[2026-05-08T02:47:17Z] [iter=3] Resolving target type target_type=call_site count=26625
+[2026-05-08T02:47:17Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=1.9 files_done=0 resolved=0 errors=0 current=airflow/www/static/ace.js
+[2026-05-08T03:28:38Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=43.2 files_done=1 resolved=285 errors=2315 current=airflow/www/static/nv.d3.js
+[2026-05-08T04:55:25Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=130.0 files_done=2 resolved=437 errors=7193 current=airflow/www/static/underscore.js
+[2026-05-08T04:59:33Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=134.2 files_done=3 resolved=459 errors=7425 current=airflow/www/static/dagre-d3.js
+[2026-05-08T05:20:48Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=155.4 files_done=4 resolved=533 errors=8620 current=airflow/www/static/para/parallel.js
+[2026-05-08T05:23:46Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=158.4 files_done=5 resolved=551 errors=8787 current=airflow/www/static/gantt-chart-d3v2.js
+[2026-05-08T05:24:56Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=159.5 files_done=6 resolved=551 errors=8852 current=airflow/www/static/para/webgl-2d.js
+[2026-05-08T05:28:08Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=162.8 files_done=7 resolved=576 errors=9033 current=airflow/www/static/d3.tip.v0.6.3.js
+[2026-05-08T05:28:48Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=163.4 files_done=8 resolved=581 errors=9070 current=airflow/www/static/connection_form.js
+[2026-05-08T05:42:03Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=176.7 files_done=12 resolved=892 errors=9766 current=tests/models.py
+[2026-05-08T05:49:00Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=183.6 files_done=13 resolved=974 errors=10153 current=tests/jobs.py
+[2026-05-08T06:02:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=196.9 files_done=14 resolved=1094 errors=10893 current=airflow/security/utils.py
+[2026-05-08T06:03:03Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=197.7 files_done=17 resolved=1108 errors=10937 current=airflow/bin/cli.py
+[2026-05-08T06:09:15Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=203.9 files_done=18 resolved=1335 errors=11280 current=tests/contrib/hooks/test_ftp_hook.py
+[2026-05-08T06:10:40Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=205.3 files_done=20 resolved=1349 errors=11359 current=airflow/www/views.py
+[2026-05-08T06:19:45Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=214.4 files_done=21 resolved=1561 errors=11857 current=airflow/www/utils.py
+[2026-05-08T06:28:40Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=223.3 files_done=23 resolved=1760 errors=12351 current=tests/macros/test_hive.py
+[2026-05-08T06:30:30Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=225.1 files_done=26 resolved=1799 errors=12453 current=airflow/utils/helpers.py
+[2026-05-08T06:31:25Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=226.0 files_done=27 resolved=1870 errors=12505 current=airflow/contrib/operators/spark_sql_operator.py
+[2026-05-08T06:32:37Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=227.2 files_done=29 resolved=1896 errors=12572 current=airflow/migrations/versions/e3a246e0dc1_current_schema.py
+[2026-05-08T06:33:38Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=228.3 files_done=33 resolved=1913 errors=12629 current=tests/plugins_manager.py
+[2026-05-08T06:45:32Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=34 new_files_this_iter=34 mem_mb=902 MB
+[2026-05-08T06:45:32Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/0eb7862730c68d25ebbabf1988d66d50dd988bb0.nq.gz triples=86266
+[2026-05-08T06:45:33Z] [iter=3] Checkpoint written, exiting with code 7
+[2026-05-08T06:45:33Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=14409 elapsed_min=240.1 files_completed=34
