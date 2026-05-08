@@ -1,0 +1,116 @@
+[2026-05-08T16:07:35Z] === ENRICH ITERATION 4 START | repo=apache/airflow sha=0eb78627 ===
+[2026-05-08T16:07:35Z] [iter=4] PHASE START: enrich repo=apache/airflow sha=0eb78627 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0eb78627-enrich-iter-004.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0eb7862730c68d25ebbabf1988d66d50dd988bb0.nq.gz
+[2026-05-08T16:07:35Z] [iter=4] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-05-08T16:08:03Z] [iter=4] AST store loaded triples=3421352 load_secs=27 mem_mb=894 MB
+[2026-05-08T16:08:03Z] [iter=4] Step 2: Finding LSP targets mem_mb=894 MB
+[2026-05-08T16:08:10Z] [iter=4] LSP targets found call_sites=26625 imports=1978 extends=325 implements=0 secs=6
+[2026-05-08T16:08:13Z] [iter=4] Loaded checkpoint partial graph triples=86266
+[2026-05-08T16:08:18Z] [iter=4] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=894 MB
+[2026-05-08T16:08:37Z] [iter=4] Position index built positions=240004 nodes_with_types=293364 secs=19 mem_mb=894 MB
+[2026-05-08T16:08:37Z] [iter=4] Step 3: Starting LSP resolution mem_mb=894 MB already_completed_types=[] already_completed_files=34
+[2026-05-08T16:08:37Z] [iter=4] Resolving target type target_type=call_site count=26625
+[2026-05-08T16:08:38Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=0 resolved=0 errors=0 current=tests/core.py
+[2026-05-08T16:27:46Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=20.2 files_done=1 resolved=23 errors=766 current=airflow/contrib/hooks/bigquery_hook.py
+[2026-05-08T16:30:01Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=22.4 files_done=2 resolved=75 errors=856 current=tests/operators/docker_operator.py
+[2026-05-08T16:30:50Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=23.3 files_done=3 resolved=80 errors=888 current=airflow/hooks/dbapi_hook.py
+[2026-05-08T16:31:46Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=24.2 files_done=4 resolved=108 errors=926 current=airflow/utils/db.py
+[2026-05-08T16:34:03Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=26.5 files_done=5 resolved=120 errors=1022 current=airflow/macros/hive.py
+[2026-05-08T16:35:17Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=27.7 files_done=7 resolved=130 errors=1075 current=airflow/contrib/hooks/gcp_dataproc_hook.py
+[2026-05-08T16:36:11Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=28.6 files_done=9 resolved=172 errors=1113 current=airflow/operators/hive_to_samba_operator.py
+[2026-05-08T16:37:10Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=29.6 files_done=11 resolved=193 errors=1155 current=airflow/hooks/hdfs_hook.py
+[2026-05-08T16:39:15Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=31.7 files_done=13 resolved=247 errors=1244 current=airflow/contrib/auth/backends/ldap_auth.py
+[2026-05-08T16:41:10Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=33.6 files_done=14 resolved=252 errors=1325 current=tests/impersonation.py
+[2026-05-08T16:42:24Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=34.8 files_done=17 resolved=271 errors=1378 current=airflow/utils/decorators.py
+[2026-05-08T16:43:39Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=36.1 files_done=19 resolved=288 errors=1431 current=airflow/operators/generic_transfer.py
+[2026-05-08T16:45:09Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=37.6 files_done=21 resolved=331 errors=1494 current=airflow/contrib/operators/ssh_execute_operator.py
+[2026-05-08T16:45:40Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=38.1 files_done=22 resolved=345 errors=1516 current=airflow/operators/check_operator.py
+[2026-05-08T16:46:25Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=38.8 files_done=23 resolved=388 errors=1548 current=tests/api/common/mark_tasks.py
+[2026-05-08T16:48:12Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=40.6 files_done=24 resolved=400 errors=1625 current=airflow/operators/sensors.py
+[2026-05-08T16:49:12Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=41.6 files_done=25 resolved=480 errors=1668 current=tests/www/test_views.py
+[2026-05-08T16:49:55Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=42.3 files_done=26 resolved=487 errors=1699 current=airflow/contrib/operators/bigquery_to_gcs.py
+[2026-05-08T16:51:23Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=43.8 files_done=29 resolved=508 errors=1762 current=airflow/ti_deps/deps/trigger_rule_dep.py
+[2026-05-08T16:54:39Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=47.1 files_done=31 resolved=565 errors=1901 current=airflow/contrib/executors/mesos_executor.py
+[2026-05-08T16:55:58Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=48.4 files_done=32 resolved=592 errors=1957 current=airflow/contrib/operators/bigquery_to_bigquery.py
+[2026-05-08T16:57:34Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=50.0 files_done=35 resolved=606 errors=2025 current=airflow/example_dags/example_subdag_operator.py
+[2026-05-08T16:58:04Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=50.5 files_done=38 resolved=610 errors=2047 current=airflow/ti_deps/deps/dag_ti_slots_available_dep.py
+[2026-05-08T16:59:33Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=52.0 files_done=41 resolved=668 errors=2110 current=tests/api/client/local_client.py
+[2026-05-08T17:00:48Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=53.2 files_done=43 resolved=676 errors=2163 current=tests/www/api/experimental/test_kerberos_endpoints.py
+[2026-05-08T17:01:27Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=53.9 files_done=46 resolved=702 errors=2189 current=airflow/contrib/operators/mysql_to_gcs.py
+[2026-05-08T17:01:59Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=54.4 files_done=47 resolved=718 errors=2212 current=tests/operators/latest_only_operator.py
+[2026-05-08T17:03:00Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=55.4 files_done=48 resolved=746 errors=2255 current=airflow/contrib/auth/backends/github_enterprise_auth.py
+[2026-05-08T17:04:11Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=56.6 files_done=49 resolved=754 errors=2305 current=tests/executors/dask_executor.py
+[2026-05-08T17:04:43Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=57.1 files_done=50 resolved=767 errors=2328 current=airflow/contrib/hooks/cloudant_hook.py
+[2026-05-08T17:05:36Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=58.0 files_done=54 resolved=788 errors=2365 current=airflow/contrib/hooks/ssh_hook.py
+[2026-05-08T17:07:20Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=59.8 files_done=58 resolved=806 errors=2439 current=tests/ti_deps/deps/test_not_in_retry_period_dep.py
+[2026-05-08T17:08:01Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=60.4 files_done=60 resolved=824 errors=2468 current=airflow/utils/timeout.py
+[2026-05-08T17:08:43Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=61.1 files_done=63 resolved=855 errors=2498 current=airflow/migrations/versions/1b38cef5b76e_add_dagrun.py
+[2026-05-08T17:09:19Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=61.7 files_done=67 resolved=857 errors=2523 current=airflow/example_dags/tutorial.py
+[2026-05-08T17:11:10Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=63.6 files_done=69 resolved=869 errors=2602 current=airflow/www/api/experimental/endpoints.py
+[2026-05-08T17:11:47Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=64.2 files_done=72 resolved=883 errors=2628 current=airflow/operators/s3_to_hive_operator.py
+[2026-05-08T17:12:33Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=65.0 files_done=73 resolved=918 errors=2661 current=tests/operators/hive_operator.py
+[2026-05-08T17:14:01Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=66.4 files_done=74 resolved=922 errors=2723 current=tests/hooks/test_dbapi_hook.py
+[2026-05-08T17:15:48Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=68.2 files_done=76 resolved=953 errors=2799 current=tests/ti_deps/deps/test_prev_dagrun_dep.py
+[2026-05-08T17:16:33Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=69.0 files_done=77 resolved=953 errors=2831 current=airflow/utils/trigger_rule.py
+[2026-05-08T17:17:25Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=69.8 files_done=80 resolved=965 errors=2868 current=airflow/utils/logging.py
+[2026-05-08T17:18:04Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=70.5 files_done=82 resolved=976 errors=2896 current=tests/contrib/operators/ecs_operator.py
+[2026-05-08T17:19:08Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=71.5 files_done=83 resolved=980 errors=2941 current=tests/dags/test_issue_1225.py
+[2026-05-08T17:19:50Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=72.3 files_done=84 resolved=984 errors=2971 current=scripts/perf/dags/perf_dag_2.py
+[2026-05-08T17:20:41Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=73.1 files_done=89 resolved=1009 errors=3006 current=airflow/contrib/operators/emr_add_steps_operator.py
+[2026-05-08T17:21:20Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=73.8 files_done=93 resolved=1042 errors=3034 current=airflow/contrib/hooks/__init__.py
+[2026-05-08T17:21:58Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=74.4 files_done=95 resolved=1055 errors=3060 current=airflow/operators/hive_to_mysql.py
+[2026-05-08T17:23:03Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=75.5 files_done=97 resolved=1074 errors=3106 current=airflow/contrib/hooks/qubole_hook.py
+[2026-05-08T17:23:52Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=76.3 files_done=98 resolved=1093 errors=3140 current=airflow/contrib/operators/emr_create_job_flow_operator.py
+[2026-05-08T17:24:56Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=77.3 files_done=101 resolved=1140 errors=3186 current=airflow/utils/operator_helpers.py
+[2026-05-08T17:25:51Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=78.3 files_done=103 resolved=1162 errors=3224 current=airflow/migrations/versions/1507a7289a2f_create_is_encrypted.py
+[2026-05-08T17:27:01Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=79.4 files_done=107 resolved=1178 errors=3273 current=tests/dags/test_scheduler_dags.py
+[2026-05-08T17:27:33Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=80.0 files_done=111 resolved=1193 errors=3296 current=airflow/contrib/hooks/emr_hook.py
+[2026-05-08T17:28:09Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=80.6 files_done=113 resolved=1196 errors=3321 current=tests/ti_deps/deps/test_dag_unpaused_dep.py
+[2026-05-08T17:28:51Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=81.3 files_done=115 resolved=1214 errors=3351 current=airflow/contrib/sensors/datadog_sensor.py
+[2026-05-08T17:29:29Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=81.9 files_done=118 resolved=1238 errors=3378 current=airflow/contrib/operators/emr_terminate_job_flow_operator.py
+[2026-05-08T17:30:05Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=82.5 files_done=120 resolved=1246 errors=3403 current=airflow/operators/hive_stats_operator.py
+[2026-05-08T17:31:15Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=83.7 files_done=122 resolved=1262 errors=3453 current=tests/contrib/sensors/emr_job_flow_sensor.py
+[2026-05-08T17:32:45Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=85.2 files_done=126 resolved=1296 errors=3517 current=airflow/contrib/hooks/gcs_hook.py
+[2026-05-08T17:33:25Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=85.8 files_done=128 resolved=1312 errors=3545 current=airflow/task_runner/__init__.py
+[2026-05-08T17:33:59Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=86.4 files_done=133 resolved=1329 errors=3569 current=airflow/hooks/base_hook.py
+[2026-05-08T17:34:34Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=87.0 files_done=135 resolved=1351 errors=3594 current=airflow/contrib/hooks/salesforce_hook.py
+[2026-05-08T17:35:12Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=87.6 files_done=136 resolved=1367 errors=3621 current=airflow/operators/latest_only_operator.py
+[2026-05-08T17:35:56Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=88.3 files_done=138 resolved=1392 errors=3652 current=airflow/hooks/pig_hook.py
+[2026-05-08T17:36:32Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=88.9 files_done=140 resolved=1401 errors=3677 current=airflow/operators/python_operator.py
+[2026-05-08T17:37:02Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=89.4 files_done=143 resolved=1441 errors=3698 current=airflow/example_dags/example_branch_python_dop_operator_3.py
+[2026-05-08T17:37:47Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=90.2 files_done=145 resolved=1449 errors=3730 current=airflow/minihivecluster.py
+[2026-05-08T17:38:19Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=90.7 files_done=148 resolved=1456 errors=3753 current=airflow/macros/__init__.py
+[2026-05-08T17:39:01Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=91.4 files_done=152 resolved=1478 errors=3782 current=airflow/operators/slack_operator.py
+[2026-05-08T17:39:46Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=92.2 files_done=155 resolved=1496 errors=3813 current=airflow/ti_deps/deps/dagrun_exists_dep.py
+[2026-05-08T17:40:16Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=92.7 files_done=159 resolved=1512 errors=3834 current=tests/contrib/operators/spark_submit_operator.py
+[2026-05-08T17:41:02Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=93.5 files_done=161 resolved=1524 errors=3867 current=tests/contrib/operators/emr_add_steps_operator.py
+[2026-05-08T17:41:46Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=94.2 files_done=165 resolved=1540 errors=3898 current=airflow/operators/mysql_to_hive.py
+[2026-05-08T17:42:27Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=94.9 files_done=170 resolved=1562 errors=3927 current=tests/dags_with_system_exit/a_system_exit.py
+[2026-05-08T17:43:24Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=95.8 files_done=174 resolved=1582 errors=3968 current=airflow/contrib/hooks/spark_sql_hook.py
+[2026-05-08T17:44:05Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=96.5 files_done=177 resolved=1601 errors=3997 current=airflow/example_dags/example_http_operator.py
+[2026-05-08T17:44:53Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=97.3 files_done=180 resolved=1610 errors=4031 current=airflow/operators/http_operator.py
+[2026-05-08T17:45:30Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=97.9 files_done=184 resolved=1647 errors=4057 current=tests/ti_deps/deps/test_not_running_dep.py
+[2026-05-08T17:46:22Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=98.8 files_done=186 resolved=1649 errors=4094 current=tests/executors/test_executor.py
+[2026-05-08T17:46:58Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=99.4 files_done=188 resolved=1676 errors=4120 current=airflow/hooks/postgres_hook.py
+[2026-05-08T17:47:36Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=100.0 files_done=191 resolved=1693 errors=4147 current=airflow/contrib/sensors/gcs_sensor.py
+[2026-05-08T17:48:31Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=100.9 files_done=194 resolved=1705 errors=4186 current=airflow/contrib/sensors/bigquery_sensor.py
+[2026-05-08T17:49:05Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=101.5 files_done=199 resolved=1719 errors=4210 current=airflow/ti_deps/deps/not_in_retry_period_dep.py
+[2026-05-08T17:49:48Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=102.2 files_done=204 resolved=1737 errors=4240 current=airflow/contrib/sensors/emr_base_sensor.py
+[2026-05-08T17:50:30Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=102.9 files_done=212 resolved=1753 errors=4270 current=airflow/example_dags/example_bash_operator.py
+[2026-05-08T17:51:30Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=103.9 files_done=215 resolved=1776 errors=4311 current=airflow/api/client/json_client.py
+[2026-05-08T17:52:09Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=104.6 files_done=226 resolved=1792 errors=4339 current=airflow/utils/file.py
+[2026-05-08T17:52:42Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=105.1 files_done=232 resolved=1808 errors=4362 current=airflow/contrib/hooks/fs_hook.py
+[2026-05-08T17:53:18Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=105.7 files_done=240 resolved=1814 errors=4387 current=airflow/utils/__init__.py
+[2026-05-08T17:53:50Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=106.3 files_done=246 resolved=1824 errors=4410 current=airflow/hooks/__init__.py
+[2026-05-08T17:54:29Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=106.9 files_done=251 resolved=1843 errors=4437 current=airflow/contrib/operators/bigquery_operator.py
+[2026-05-08T17:55:07Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=107.5 files_done=262 resolved=1863 errors=4464 current=airflow/www/blueprints.py
+[2026-05-08T17:55:38Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=108.1 files_done=273 resolved=1883 errors=4486 current=airflow/contrib/operators/sqoop_operator.py
+[2026-05-08T17:55:57Z] [iter=4] Target type resolved target_type=call_site resolved=1892 errors=4499 secs=6440 mem_mb=894 MB
+[2026-05-08T17:55:57Z] [iter=4] Resolving target type target_type=import_statement count=1978
+[2026-05-08T17:56:06Z] [iter=4] Target type resolved target_type=import_statement resolved=1368 errors=0 secs=9 mem_mb=894 MB
+[2026-05-08T17:56:06Z] [iter=4] Resolving target type target_type=extends_clause count=325
+[2026-05-08T17:56:08Z] [iter=4] HEARTBEAT target_type=extends_clause elapsed_min=108.6 files_done=66 resolved=132 errors=0 current=airflow/contrib/hooks/qubole_hook.py
+[2026-05-08T17:56:09Z] [iter=4] Target type resolved target_type=extends_clause resolved=239 errors=0 secs=3 mem_mb=894 MB
+[2026-05-08T17:56:38Z] [iter=4] Step 5: Writing final enrichment file triples=220303
+[2026-05-08T17:56:43Z] [iter=4] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/0eb7862730c68d25ebbabf1988d66d50dd988bb0.nq.gz size_kb=4982
+[2026-05-08T17:56:43Z] [iter=4] Checkpoint cleared (enrichment complete)
+[2026-05-08T17:56:43Z] [iter=4] PHASE END: enrich elapsed_s=6548 elapsed_min=109.1 total_triples=220303
